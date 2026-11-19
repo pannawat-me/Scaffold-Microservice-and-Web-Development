@@ -7,4 +7,3 @@ export const app = new Elysia().get(
     response: t.Object({ status: t.Literal("ok") }),
   },
 );
-z
