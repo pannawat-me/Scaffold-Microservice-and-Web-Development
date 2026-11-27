@@ -5,15 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ชมรมข่าวซิ่ง มทร.อีสาน</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
     <h1></h1>
     <nav aria-label="เมนูหลัก">
-      <a href="#catalog">ข่าวเจ๋ง</a>
-      <a href="#cart">ข่าวภูผา</a>
-      <a href="#cart-title">ข่าวซัน</a>
+      <a href="#catalog">สินค้า</a>
+      <a href="#cart">ตะกร้าตัวอย่าง</a>
     </nav>
   </header>
 
@@ -38,23 +38,25 @@
       <p>จัดไป10ตัว</p>
     </section>
 
-    <form method="get">
-      <label for="product">สินค้าที่สนใจ</label>
-      <select id="product" name="productId">
-        <option value="notebook">สมุดบันทึก</option>
-      </select>
-      <label for="quantity">จำนวนที่สนใจ</label>
-      <input type="number" id="quantity" name="quantity" min="1" required>
-
-
+    <form class="interest-form">
+      <div class="field">
+        <label for="product">สินค้าที่สนใจ</label>
+        <select id="product" name="productId">
+          <option value="notebook">สมุดบันทึก</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="quantity">จำนวนที่สนใจ</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+      </div>
       <button type="submit">ทดลองส่งข้อมูล</button>
+      <button type="reset">คืนค่าเริ่มต้น</button>
     </form>
-
 
   </main>
 
   <footer>
-    <p></p>
+    <p><a href="index.html">เริ่มตัวอย่างใหม่</a></p>
   </footer>
 </body>
 
